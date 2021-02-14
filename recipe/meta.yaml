@@ -14,7 +14,7 @@ source:
     - shared.patch
 
 build:
-  number: 1
+  number: 2
   skip: True  # [not linux]
 
 requirements:
