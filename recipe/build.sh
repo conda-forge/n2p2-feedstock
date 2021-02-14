@@ -8,6 +8,7 @@ mkdir -p ${PREFIX}/include ${PREFIX}/lib ${PREFIX}/bin ${PREFIX}/python${PY_VER}
 mv ${SRC_DIR}/lib/pynnp* ${SP_DIR}
 cp ${SRC_DIR}/lib/* ${PREFIX}/lib
 cp ${SRC_DIR}/include/* ${PREFIX}/include
+cp ${SRC_DIR}/src/libnnpif/LAMMPS/InterfaceLammps.h ${PREFIX}/include
 
 # Build application
 export CFLAGS=${CXXFLAGS}
