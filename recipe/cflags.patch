@@ -36,7 +36,7 @@ index 09587d9c7..b97f0d746 100644
  ###############################################################################
 -CC=$(PROJECT_CC)
 +# CC=$(PROJECT_CC)
- ifneq (,$(findstring NNP_NO_MPI,${PROJECT_OPTIONS}))
+ ifneq (,$(findstring N2P2_NO_MPI,${PROJECT_OPTIONS}))
  MPICC=${PROJECT_CC}
 -CFLAGS=${PROJECT_CFLAGS}
 +# CFLAGS=${PROJECT_CFLAGS}
