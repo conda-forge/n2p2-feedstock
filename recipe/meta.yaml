@@ -1,5 +1,5 @@
 {% set name = "n2p2" %}
-{% set version = "2.1.3" %}
+{% set version = "2.1.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/CompPhysVienna/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: bc1644f5a48ea80bb024922c7c8c48d175e57e03a756147bf5240ec0c43c2dac
+  sha256: f1672c09af4ed16a7f396606977e4675a0fee98f04bfd9574907fba4b83a14ef
   patches:
     - app.patch
     - cflags.patch
