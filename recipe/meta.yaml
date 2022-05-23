@@ -12,6 +12,7 @@ source:
     - app.patch
     - cflags.patch
     - shared.patch
+    - mpich.patch  # [mpi == 'mpich']
 
 build:
   number: 0
