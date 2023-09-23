@@ -1,11 +1,11 @@
-About n2p2
-==========
+About n2p2-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/n2p2-feedstock/blob/main/LICENSE.txt)
 
 Home: https://compphysvienna.github.io/n2p2/
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/n2p2-feedstock/blob/main/LICENSE.txt)
 
 Summary: n2p2 - A Neural Network Potential Package
 
@@ -52,10 +52,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpimpichpython3.8.____73_pypy</td>
+              <td>linux_64_mpimpichpython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11884&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/n2p2-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpimpichpython3.8.____73_pypy" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/n2p2-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpimpichpython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -94,10 +94,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpiopenmpipython3.8.____73_pypy</td>
+              <td>linux_64_mpiopenmpipython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11884&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/n2p2-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpiopenmpipython3.8.____73_pypy" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/n2p2-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_mpiopenmpipython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
