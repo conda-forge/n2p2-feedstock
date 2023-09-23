@@ -14,7 +14,7 @@ source:
     - shared.patch
 
 build:
-  number: 3
+  number: 4
   skip: true  # [not linux]
   run_exports:
      - {{ pin_subpackage("n2p2", max_pin="x.x") }}
