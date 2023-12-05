@@ -14,7 +14,8 @@ source:
     - shared.patch
 
 build:
-  number: 4
+  number: 5
+  string: {{ mpi_prefix }}_py{{ CONDA_PY }}_h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}
   skip: true  # [not linux]
   run_exports:
      - {{ pin_subpackage("n2p2", max_pin="x.x") }}
@@ -26,7 +27,7 @@ requirements:
   host:
     - python
     - cython
-    - {{ mpi }}
+    - {{ mpi }}  # [mpi != 'nompi']
     - libblas
     - libcblas
     - gsl
