@@ -15,6 +15,11 @@ source:
 
 build:
   number: 5
+  {% if mpi != 'nompi' %}
+  {% set mpi_prefix = "mpi_" + mpi %}
+  {% else %}
+  {% set mpi_prefix = "nompi" %}
+  {% endif %}
   string: {{ mpi_prefix }}_py{{ CONDA_PY }}_h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}
   skip: true  # [not linux]
   run_exports:
