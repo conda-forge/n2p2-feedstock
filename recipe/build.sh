@@ -4,7 +4,7 @@ cd src
 # Build libraries
 export CFLAGS=${CFLAGS}" -isystem $PREFIX/include/eigen3"
 if [[ "${mpi}" == "nompi" ]]; then
-    MAKE_ARGS="PROJECT_OPTIONS=-DN2P2_NO_MPI PROJECT_MPICC=g++"
+    MAKE_ARGS="PROJECT_OPTIONS=-DN2P2_NO_MPI PROJECT_MPICC=${CC}"
 fi
 
 make -j${NUM_CPUS} libnnp libnnpif libnnptrain pynnp ${MAKE_ARGS}
