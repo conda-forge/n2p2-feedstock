@@ -4,7 +4,7 @@ cd src
 # Build libraries
 export CFLAGS=${CFLAGS}" -isystem $PREFIX/include/eigen3"
 if [[ "${mpi}" == "nompi" ]]; then
-    MAKE_ARGS="PROJECT_OPTIONS=-DN2P2_NO_MPI PROJECT_MPICC=${CC}"
+    MAKE_ARGS="PROJECT_OPTIONS=-DN2P2_NO_MPI PROJECT_MPICC=${CXX} PROJECT_CC=${CXX}"
 fi
 
 if [[ "${mpi}" == "nompi" ]]; then
