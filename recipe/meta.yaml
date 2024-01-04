@@ -48,18 +48,18 @@ test:
   imports:
     - pynnp
   commands:
-    - test -f ${PREFIX}/bin/nnp-convert
-    - test -f ${PREFIX}/bin/nnp-cutoff
-    - test -f ${PREFIX}/bin/nnp-dist
-    - test -f ${PREFIX}/bin/nnp-predict
-    - test -f ${PREFIX}/bin/nnp-prune
-    - test -f ${PREFIX}/bin/nnp-select
-    - test -f ${PREFIX}/bin/nnp-symfunc
-    - test -f ${PREFIX}/bin/nnp-comp2
-    - test -f ${PREFIX}/bin/nnp-dataset
-    - test -f ${PREFIX}/bin/nnp-norm
-    - test -f ${PREFIX}/bin/nnp-scaling
-    - test -f ${PREFIX}/bin/nnp-train
+    - test -f ${PREFIX}/bin/nnp-convert  # [mpi != 'nompi']
+    - test -f ${PREFIX}/bin/nnp-cutoff  # [mpi != 'nompi']
+    - test -f ${PREFIX}/bin/nnp-dist  # [mpi != 'nompi']
+    - test -f ${PREFIX}/bin/nnp-predict  # [mpi != 'nompi']
+    - test -f ${PREFIX}/bin/nnp-prune  # [mpi != 'nompi']
+    - test -f ${PREFIX}/bin/nnp-select  # [mpi != 'nompi']
+    - test -f ${PREFIX}/bin/nnp-symfunc  # [mpi != 'nompi']
+    - test -f ${PREFIX}/bin/nnp-comp2  # [mpi != 'nompi']
+    - test -f ${PREFIX}/bin/nnp-dataset  # [mpi != 'nompi']
+    - test -f ${PREFIX}/bin/nnp-norm  # [mpi != 'nompi']
+    - test -f ${PREFIX}/bin/nnp-scaling  # [mpi != 'nompi']
+    - test -f ${PREFIX}/bin/nnp-train  # [mpi != 'nompi']
 
 about:
   home: https://compphysvienna.github.io/n2p2/
