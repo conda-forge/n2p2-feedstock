@@ -15,7 +15,7 @@ source:
 
 build:
   # prefer mpi as libnnptrain is not supported for nompi
-  {% set build = 5 %}
+  {% set build = 6 %}
   {% set build = build + 100 %}  # [mpi != 'nompi']
   number: {{ build }}
   {% if mpi != 'nompi' %}
@@ -31,6 +31,7 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - make
   host:
     - python
