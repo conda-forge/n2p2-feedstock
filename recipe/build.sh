@@ -9,9 +9,9 @@ fi
 
 if [[ "${mpi}" == "nompi" ]]; then
     # libnnptrain can only work with MPI
-    make -j${NUM_CPUS} libnnp libnnpif pynnp ${MAKE_ARGS}
+    make --no-print-directory -j${NUM_CPUS} libnnp libnnpif pynnp ${MAKE_ARGS}
 else
-    make -j${NUM_CPUS} libnnp libnnpif libnnptrain pynnp ${MAKE_ARGS}
+    make --no-print-directory -j${NUM_CPUS} libnnp libnnpif libnnptrain pynnp ${MAKE_ARGS}
 fi
 mkdir -p ${PREFIX}/include ${PREFIX}/lib ${PREFIX}/bin ${PREFIX}/python${PY_VER}/site-packages
 mv ${SRC_DIR}/lib/pynnp* ${SP_DIR}
@@ -23,6 +23,6 @@ if [[ "${mpi}" != "nompi" ]]; then
     # Build application
     export CFLAGS=${CXXFLAGS}
     export CC=${CXX}
-    make -j${NUM_CPUS} all-app ${MAKE_ARGS}
+    make --no-print-directory -j${NUM_CPUS} all-app ${MAKE_ARGS}
     cp ${SRC_DIR}/bin/* ${PREFIX}/bin
 fi
