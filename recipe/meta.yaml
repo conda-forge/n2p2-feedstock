@@ -15,7 +15,7 @@ source:
 
 build:
   # prefer mpi as libnnptrain is not supported for nompi
-  {% set build = 0 %}
+  {% set build = 1 %}
   {% set build = build + 100 %}  # [mpi != 'nompi']
   number: {{ build }}
   {% if mpi != 'nompi' %}
