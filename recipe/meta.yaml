@@ -1,5 +1,5 @@
 {% set name = "n2p2" %}
-{% set version = "2.2.0" %}
+{% set version = "2.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/CompPhysVienna/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 4acaa255632a7b9811d7530fd52ac7dd0bb3a8e3a3cf8512beadd29b62c1bfef
+  sha256: 1cc724ef30dd989008516c5cb9567992974b1b63cd3ab453275b1c512f1495ca
   patches:
     - app.patch
     - cflags.patch
@@ -15,7 +15,7 @@ source:
 
 build:
   # prefer mpi as libnnptrain is not supported for nompi
-  {% set build = 7 %}
+  {% set build = 0 %}
   {% set build = build + 100 %}  # [mpi != 'nompi']
   number: {{ build }}
   {% if mpi != 'nompi' %}
